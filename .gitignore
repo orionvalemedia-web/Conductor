@@ -1,0 +1,139 @@
+# Conductor - public documentation repository
+#
+# This repository is documentation only. It must never contain source code,
+# build output, credentials, or local tooling.
+#
+# The rules below are a safety net, not a filter: nothing that matches them
+# should ever be placed in this directory in the first place. If git reports
+# that one of these was ignored, treat it as a warning that something was
+# copied here by mistake, and remove the file itself.
+
+# ---------------------------------------------------------------------------
+# Source code
+# ---------------------------------------------------------------------------
+*.js
+*.mjs
+*.cjs
+*.jsx
+*.ts
+*.mts
+*.cts
+*.tsx
+*.py
+*.rb
+*.go
+*.rs
+*.java
+*.kt
+*.cs
+*.c
+*.h
+*.cc
+*.cpp
+*.hpp
+*.lua
+*.php
+*.swift
+*.sh
+*.ps1
+*.map
+*.wasm
+
+# ---------------------------------------------------------------------------
+# Package and build metadata
+# ---------------------------------------------------------------------------
+package.json
+package-lock.json
+npm-shrinkwrap.json
+yarn.lock
+pnpm-lock.yaml
+node_modules/
+dist/
+build/
+out/
+coverage/
+.cache/
+*.tsbuildinfo
+
+# ---------------------------------------------------------------------------
+# Common code and test directories
+# ---------------------------------------------------------------------------
+src/
+lib/
+bin/
+test/
+tests/
+spec/
+
+# ---------------------------------------------------------------------------
+# Secrets and credentials
+# ---------------------------------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+credentials*
+secrets*
+*token*
+*.credentials
+
+# ---------------------------------------------------------------------------
+# Local tooling - stays on disk, never published
+# ---------------------------------------------------------------------------
+*.bat
+*.cmd
+*.lnk
+
+# ---------------------------------------------------------------------------
+# Working files and local artifacts
+# ---------------------------------------------------------------------------
+*.log
+*.trace
+*.stackdump
+*-private.*
+*-internal.*
+*-draft.*
+*.bak
+*.bak-*
+*.orig
+*.tmp
+_backups/
+_staging/
+_private/
+scratch/
+
+# ---------------------------------------------------------------------------
+# Recorded runs
+# ---------------------------------------------------------------------------
+*.cassette
+cassettes/
+recordings/
+replays/
+
+# ---------------------------------------------------------------------------
+# Archives
+# ---------------------------------------------------------------------------
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+
+# ---------------------------------------------------------------------------
+# Editor and operating system noise
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+Desktop.ini
+desktop.ini
+$RECYCLE.BIN/
+.DS_Store
